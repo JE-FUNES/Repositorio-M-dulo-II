@@ -63,15 +63,15 @@ function buildToDo(todo, index) { // todo {description: 'string', complete: bool
   toDoText.innerHTML = todo.description;
   // 5
   // lo quito para el extracredit 
-  // toDoText.id = index;
+   toDoText.id = index;
   
   // 6
   if (todo.complete) {
     toDoText.className = 'completeText';
     // extracredits e
-    checkboxElement.checked = true; 
+    // checkboxElement.checked = true; 
     // extracredit f
-    toDoShell.appendChild(checkboxElement);
+    // toDoShell.appendChild(checkboxElement);
      // si es true
   }
   // como no debemos hacer nada si el false, ahi termina el punto 6
@@ -80,11 +80,11 @@ function buildToDo(todo, index) { // todo {description: 'string', complete: bool
 
   // 5 de otro ejercicio
   // se lo quito por extracredits
-//  toDoText.addEventListener('click', completeToDo);
+  toDoText.addEventListener('click', completeToDo);
 
   // extracredits a
   // Crear un elemento <input> de tipo "checkbox"
-const checkboxElement = document.createElement('input');
+/*const checkboxElement = document.createElement('input');
 checkboxElement.type = 'checkbox';
 // b
 checkboxElement.id = 'index'; // Asignar un id si es necesario
@@ -107,7 +107,7 @@ const container = document.getElementById('contenedor'); // Cambia 'contenedor' 
 container.appendChild(checkboxElement);
 container.appendChild(labelElement);
 
-
+*/
 
 
   // 8
