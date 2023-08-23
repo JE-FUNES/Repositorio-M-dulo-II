@@ -20,6 +20,7 @@ export default function Home() {
     <div>
       <img className={styleHome.logo} src={logo} alt="logo"  />
       <Cards cruise={cruise} />
+      <p>Julia</p>
     </div>
   );
 }
